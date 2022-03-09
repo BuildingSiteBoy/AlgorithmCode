@@ -1,5 +1,10 @@
 package leetCode;
 
+/**
+ * 双指针
+ * 88. 归并两个有序数组
+ * @author 曾奕
+ */
 public class Test88 {
     public static void main(String[] args) {
         int[] n1 = {1, 2, 3, 0, 0, 0};

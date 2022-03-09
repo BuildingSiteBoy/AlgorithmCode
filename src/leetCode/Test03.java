@@ -21,8 +21,9 @@ public class Test03 {
 
 class Solution03 {
     public int lengthOfLongestSubstring(String s) {
-        if (s.length() == 0)
+        if (s.length() == 0) {
             return 0;
+        }
 
         //map集合用于存储字符上一次出现的位置
         Map<Character, Integer> map = new HashMap<>();

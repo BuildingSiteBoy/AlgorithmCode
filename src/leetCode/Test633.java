@@ -1,5 +1,10 @@
 package leetCode;
 
+/**
+ * 双指针
+ * 633. 两数平方和
+ * @author 曾奕
+ */
 public class Test633 {
     public static void main(String[] args) {
         Solution633 s = new Solution633();

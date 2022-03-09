@@ -1,5 +1,11 @@
 package leetCode;
 
+/**
+ * 双指针
+ * 141. 判断链表是否存在环
+ * 一个指针每次移动一个节点，一个指针每次移动两个节点，如果存在环，那么这两个指针一定会相遇
+ * @author 曾奕
+ */
 public class Test141 {
     public static void main(String[] args) {
 

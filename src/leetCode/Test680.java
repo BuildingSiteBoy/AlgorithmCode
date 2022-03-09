@@ -1,5 +1,11 @@
 package leetCode;
 
+/**
+ * 双指针
+ * 680. 回文字符串
+ * 可以删除一个字符，判断是否能构成回文字符串
+ * @author 曾奕
+ */
 public class Test680 {
     public static void main(String[] args) {
         Solution680 s = new Solution680();

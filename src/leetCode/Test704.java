@@ -5,13 +5,13 @@ public class Test704 {
         int[] nums1 = {1, 2, 3, 4, 5, 6};
         int[] nums2 = {2, 4, 6, 8, 10};
 
-        Solution solution = new Solution();
+        Solution704 solution = new Solution704();
         System.out.println(solution.search(nums1, 2));
         System.out.println(solution.search(nums2, 3));
     }
 }
 
-class Solution {
+class Solution704 {
     public int search(int[] nums, int target) {
         int res = -1;
 

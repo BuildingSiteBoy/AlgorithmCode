@@ -3,6 +3,11 @@ package leetCode;
 import java.util.Arrays;
 import java.util.HashSet;
 
+/**
+ * 双指针
+ * 345. 反转字符串中的元音字符
+ * @author 曾奕
+ */
 public class Test345 {
     public static void main(String[] args) {
         Solution345 s = new Solution345();

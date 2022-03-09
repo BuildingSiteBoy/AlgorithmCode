@@ -1,5 +1,10 @@
 package leetCode;
 
+/**
+ * 双指针解法
+ * 167. 有序数组的两个和
+ * @author 曾奕
+ */
 public class Test167 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15, 19, 24};
