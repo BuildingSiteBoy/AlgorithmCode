@@ -1,20 +1,22 @@
 package leetCode;
 
 /**
+ * 数据结构：链表
  * 双指针
-* 19. 删除链表的倒数第 N 个结点
-*   给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
-* */
-
+ * 19. 删除链表的倒数第 N 个结点
+ * 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
+ *
+ * @author 曾奕
+ * */
 public class Test19 {
     public static void main(String[] args) {
         //int[] nums = {1, 2, 3, 4, 5, 6, 7, 8};
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8};
-        ListNode876 list = new ListNode876(nums[0]);
-        ListNode876 node = list;
+        ListNode list = new ListNode(nums[0]);
+        ListNode node = list;
 
         for (int i = 1; i < nums.length ; i++) {
-            node.next = new ListNode876(nums[i]);
+            node.next = new ListNode(nums[i]);
             node = node.next;
         }
         System.out.println();
@@ -25,8 +27,8 @@ public class Test19 {
         printTest19(new Solution19_02().removeNthFromEnd(list, 7));
     }
 
-    public static void printTest19(ListNode876 head) {
-        ListNode876 node = head;
+    public static void printTest19(ListNode head) {
+        ListNode node = head;
         while (node != null) {
             System.out.print(node.val + " ");
             node = node.next;
@@ -37,15 +39,16 @@ public class Test19 {
 
 //双指针方法
 class Solution19_01 {
-    public ListNode876 removeNthFromEnd(ListNode876 head, int n) {
-        ListNode876 left = head, right = head;
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode left = head, right = head;
 
         while (n != 0) {
             right = right.next;
             n--;        //先让right指针先走n步
         }
 
-        if (right == null) {    //当删除第一个结点时，直接返回头节点后一个结点
+        //当删除第一个结点时，直接返回头节点后一个结点
+        if (right == null) {
             return head.next;
         }
 
@@ -62,8 +65,8 @@ class Solution19_01 {
 
 //求链表长度
 class Solution19_02 {
-    public ListNode876 removeNthFromEnd(ListNode876 head, int n) {
-        ListNode876 node = head;
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode node = head;
         int count = 0;
 
         while (node.next != null) {

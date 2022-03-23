@@ -1,5 +1,15 @@
 package leetCode;
 
+/**
+ * 二分查找
+ * 278. 第一个错误的版本
+ *
+ * 如果第 m 个版本出错，则表示第一个错误的版本在 [l, m] 之间，令 h = m；否则第一个错误的版本在 [m + 1, h] 之
+ * 间，令 l = m + 1。
+ * 因为 h 的赋值表达式为 h = m，因此循环条件为 l < h
+ *
+ * @author 曾奕
+ */
 public class Test278 {
     public static void main(String[] args) {
 

@@ -1,5 +1,7 @@
 package leetCode;
 
+import swordFingerOffer.ListNode;
+
 /**
  * 双指针
  * 141. 判断链表是否存在环
@@ -13,12 +15,12 @@ public class Test141 {
 }
 
 class Solution141 {
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle(ListNode141 head) {
         if (head == null) {
             return false;
         }
 
-        ListNode l1 = head, l2 = head.next;
+        ListNode141 l1 = head, l2 = head.next;
 
         while (l1 != null && l2 != null && l2.next != null) {
             if (l1 == l2) {
@@ -33,7 +35,7 @@ class Solution141 {
     }
 }
 
-class ListNode {
-    ListNode node;
-    ListNode next;
+class ListNode141 {
+    ListNode141 node;
+    ListNode141 next;
 }

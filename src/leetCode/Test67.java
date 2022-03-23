@@ -1,10 +1,10 @@
 package leetCode;
 
-/*
-* 67.二进制求和
-* 给你两个二进制字符串，返回它们的和（用二进制表示）。
-* */
-
+/**
+ * 67.二进制求和
+ * 给你两个二进制字符串，返回它们的和（用二进制表示）。
+ * @author 曾奕
+ */
 public class Test67 {
     public static void main(String[] args) {
         String a = "1010";
@@ -16,10 +16,12 @@ public class Test67 {
 
 class Solution67 {
     public String addBinary(String a, String b) {
-        if (a.length() == 0)
+        if (a.length() == 0) {
             return b;
-        if (b.length() == 0)
+        }
+        if (b.length() == 0) {
             return a;
+        }
 
         StringBuilder sb = new StringBuilder();
         int i = a.length() - 1;

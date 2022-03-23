@@ -1,29 +1,26 @@
 package leetCode;
 
 /**
+ * 数据结构：链表
  * 206. 反转链表
  * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
  *
  * 解题思路：
  *  使用头插法来重新建立链表
+ *
+ * @author 曾奕
  * */
-
 public class Test206 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution206 {
-    public ListNode21 reverseList(ListNode21 head) {
-        if (head == null)
+    public ListNode reverseList(ListNode head) {
+        if (head == null) {
             return null;
+        }
 
-        //ListNode21 res = new ListNode21();    错误：已初始化，会赋值为0
-        ListNode21 res = null;
+        //ListNode res = new ListNode();    错误：已初始化，会赋值为0
+        ListNode res = null;
 
         while (head != null) {
-            ListNode21 p = head;
+            ListNode p = head;
             head = head.next;
 
             p.next = res;
@@ -31,5 +28,16 @@ class Solution206 {
         }
 
         return res;
+    }
+
+    public ListNode reverseListE(ListNode head) {
+          if (head == null || head.next == null) {
+              return head;
+          }
+          ListNode next = head.next;
+          ListNode newHead = reverseList(next);
+          next.next = head;
+          head.next = null;
+          return newHead;
     }
 }

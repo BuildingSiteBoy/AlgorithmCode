@@ -7,9 +7,9 @@ import java.util.List;
 /**
  * 回溯
  * 46. 全排列
- * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。
- * */
-
+ * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列
+ *
+ * @author 曾奕*/
 public class Test46 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};

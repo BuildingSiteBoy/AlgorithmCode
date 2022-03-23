@@ -9,8 +9,8 @@ import java.util.List;
  * 给定两个整数 n 和 k，返回范围 [1, n] 中所有可能的 k 个数的组合。
  *
  * 解题思路：回溯算法
- * */
-
+ *
+ * @author 曾奕*/
 public class Test77 {
     public static void main(String[] args) {
         System.out.println(new Solution77().combine(4, 2));
@@ -27,7 +27,12 @@ class Solution77 {
         return res;
     }
 
-    //从集合中搜取元素，start来控制范围缩小
+    /**
+     * 从集合中搜取元素，start来控制范围缩小
+     * @param n
+     * @param k
+     * @param start
+     */
     private void backtracking(int n, int k, int start) {
         //终止条件
         if (path.size() == k) {

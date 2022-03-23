@@ -27,7 +27,7 @@ public class Test116 {
 }
 
 class Solution116 {
-    public TreeNode116 connect(TreeNode116 root) {
+    public TreeNodePerfect connect(TreeNodePerfect root) {
         if (root == null)
             return null;
 
