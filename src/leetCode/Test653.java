@@ -13,7 +13,7 @@ public class Test653 {
     Set<Integer> set = new HashSet<>();
     List<Integer> list = new ArrayList<>();
 
-    public boolean findTarget(TreeNode653 root, int k) {
+    public boolean findTarget(TreeNode root, int k) {
         if (root == null) {
             return false;
         }
@@ -25,7 +25,7 @@ public class Test653 {
         return findTarget(root.right, k) || findTarget(root.left, k);
     }
 
-    public boolean findTargetE(TreeNode653 root, int k) {
+    public boolean findTargetE(TreeNode root, int k) {
         // 中序遍历
         inOrderTraversal(root);
         // 双指针查找两数之和
@@ -42,35 +42,16 @@ public class Test653 {
         return false;
     }
 
-    private void inOrderTraversal(TreeNode653 root) {
+    /**
+     * 中序遍历：返回有序数组
+     * @param root 根结点
+     */
+    private void inOrderTraversal(TreeNode root) {
         if (root == null) {
             return;
         }
         inOrderTraversal(root.left);
         list.add(root.val);
         inOrderTraversal(root.right);
-    }
-}
-
-
-class TreeNode653 {
-    int val;
-    TreeNode653 left;
-    TreeNode653 right;
-    TreeNode653 next;
-
-    public TreeNode653() {
-    }
-
-    public TreeNode653(int val) {
-        this.val = val;
-    }
-
-    public TreeNode653(int val, TreeNode653 left,
-                       TreeNode653 right, TreeNode653 next) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-        this.next = next;
     }
 }
