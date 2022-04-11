@@ -1,5 +1,10 @@
 package leetCode;
 
+/**
+ * 283. 移动零
+ * 把数组中的 0 移到末尾
+ * @author 曾奕
+ */
 public class Test283 {
     public static void main(String[] args) {
         int[] nums = {0, 1, 0, 3, 12};

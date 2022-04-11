@@ -9,6 +9,7 @@ public class Test744 {
     public char nextGreatestLetter(char[] letters, char target) {
         int n = letters.length;
         int l = 0, h = n - 1;
+        // 二分查找
         while (l <= h) {
             int m = l + (h - l) / 2;
             if (letters[m] <= target) {
