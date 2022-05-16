@@ -15,6 +15,9 @@ package leetCode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author 曾奕
+ */
 public class Test118 {
     public static void main(String[] args) {
         System.out.println(new Solution118().generate(10));

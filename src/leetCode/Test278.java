@@ -12,7 +12,9 @@ package leetCode;
  */
 public class Test278 {
     public static void main(String[] args) {
-
+        String a = "java";
+        String b = "java";
+        System.out.println(a == b);
     }
 
     public static class Solution {
